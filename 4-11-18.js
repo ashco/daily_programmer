@@ -1,8 +1,6 @@
 // https://www.reddit.com/r/dailyprogrammer/comments/6jr76h/20170627_challenge_321_easy_talking_clock/
 
 const talkingClock = (time) => {
-  // const oneNums = ['oh', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
-  // const tenNums = ['ten', 'twenty', 'thirty', 'fourty', 'fifty', 'eleven', 'twelve']
   const tens = ["o'", "", "twenty", "thirty", "fourty", "fifty"];
   const ones = ["", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"]
 
@@ -11,8 +9,6 @@ const talkingClock = (time) => {
 
   let ampm;
   (hour < 12) ? ampm = 'am' : ampm = 'pm';
-
-  // console.log(hour, minute);
 
   if (minute === 00) {
     return `It's ${ones[(hour % 12)]} ${ampm}`;
