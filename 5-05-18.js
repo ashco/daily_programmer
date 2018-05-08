@@ -327,18 +327,74 @@
 
 
 
-function convertHTML(str) {
-  // &colon;&rpar;
-  return str;
+// function convertHTML(str) {
+//   // &colon;&rpar;
+//   return str;
+// }
+
+// convertHTML("Dolce & Gabbana");
+
+
+// console.log(convertHTML("Dolce & Gabbana")) // Dolce &​amp; Gabbana.
+// console.log(convertHTML("Hamburgers < Pizza < Tacos")) // Hamburgers &​lt; Pizza &​lt; Tacos.
+// console.log(convertHTML("Sixty > twelve")) // Sixty &​gt; twelve.
+// console.log(convertHTML('Stuff in "quotation marks"')) // Stuff in &​quot;quotation marks&​quot;.
+// console.log(convertHTML("Shindler's List")) // Shindler&​apos;s List.
+// console.log(convertHTML("<>")) // &​lt;&​gt;.
+// console.log(convertHTML("abc")) // abc.
+
+
+// function spinalCase(str) {
+//   const regex = /[^a-z]/gi;
+//   str = str.replace(/([a-z])([A-Z])/g, '$1 $2');
+//   return str.replace(regex, '-').toLowerCase();
+// }
+
+// console.log(spinalCase("This Is Spinal Tap"))  //"this-is-spinal-tap".
+// console.log(spinalCase("thisIsSpinalTap"))  //"this-is-spinal-tap".
+// console.log(spinalCase("The_Andy_Griffith_Show"))  //"the-andy-griffith-show".
+// console.log(spinalCase("Teletubbies say Eh-oh"))  //"teletubbies-say-eh-oh".
+// console.log(spinalCase("AllThe-small Things"))  //"all-the-small-things".
+
+
+
+
+// function fibs (num) {
+//   if (num <= 2) {
+//     return num;
+//   }
+//   return fibs(num - 1) + fibs(num - 2) ;
+
+// }
+// // 1 1 2 3 5 8 13
+// console.log(fibs(1)); // 1
+// console.log(fibs(2)); // 2
+// console.log(fibs(3)); // 4
+// console.log(fibs(4)); // 7
+// console.log(fibs(5)); // 12
+// console.log(fibs(6)); // 12
+
+function sumFibs(num) {
+ let result = 1;
+
+ for (let i = 1; i < result; i++) {
+
+   result += i;
+ }
+
+ return result;
 }
 
-convertHTML("Dolce & Gabbana");
 
 
-console.log(convertHTML("Dolce & Gabbana")) // Dolce &​amp; Gabbana.
-console.log(convertHTML("Hamburgers < Pizza < Tacos")) // Hamburgers &​lt; Pizza &​lt; Tacos.
-console.log(convertHTML("Sixty > twelve")) // Sixty &​gt; twelve.
-console.log(convertHTML('Stuff in "quotation marks"')) // Stuff in &​quot;quotation marks&​quot;.
-console.log(convertHTML("Shindler's List")) // Shindler&​apos;s List.
-console.log(convertHTML("<>")) // &​lt;&​gt;.
-console.log(convertHTML("abc")) // abc.
+// sumFibs(4);
+
+
+// console.log(sumFibs(10)) // 10. 1 1 2 3 5 8
+console.log(sumFibs(4)) // a number. // 12
+console.log(sumFibs(5)) // a number. // 20
+// console.log(sumFibs(1000)) //  1785.
+// console.log(sumFibs(4000000)) //  4613732.
+// console.log(sumFibs(4)) // 5.
+// console.log(sumFibs(75024)) // 60696.
+// console.log(sumFibs(75025)) // 135721.
